@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app>
+ <head>
+    <title>Angularjs SPA</title>
+ </head>
+ <body ng-init="name='Ravi'">
+
+    <div ng-hide="isHidden">
+        Name: <input type="text" ng-model="name">{{name}}
+    </div>
+
+    Hide: <input type="checkbox" ng-model="isHidden">
+    <br />
+    <button ng-click="name='Ravi Yadav'">Change Name</button>
+
+    <script src="https://code.angularjs.org/1.6.0/angular.min.js"></script>
+ </body>
+</html>
