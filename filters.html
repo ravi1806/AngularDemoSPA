@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+ <head>
+    <title>Filters in Angularjs</title>
+ </head>
+ <body ng-init="customers=[{joined: '2012-12-03', name: 'Amit', city: 'Delhi', orderTotal: 34.53},{joined: '1995-04-24', name: 'Ravi', city: 'Mumbai',orderTotal: 45.34}]">
+    <h2>Customers</h2>
+    Filter: <input type="text" ng-model="customFilter.city">
+    <br /><br />
+    <table>
+        <tr>
+            <th ng-click="sortMe='name'; reverse=!reverse">Name</th>
+            <th ng-click="sortMe='city'; reverse=!reverse">City</th>
+            <th ng-click="sortMe='orderTotal'; reverse!=reverse">Order</th>
+            <th ng-click="sortMe='joined'; reverse!=reverse">Joined</th>
+        </tr>
+        <tr ng-repeat="cust in customers | filter: customFilter | orderBy: sortMe: reverse">
+            <td>{{cust.name | uppercase}}</td>
+            <td>{{cust.city | lowercase}}</td>
+            <td>{{cust.orderTotal | currency: '₹ '}}</td>
+            <td>{{cust.joined | date: 'longDate'}}</td>
+        </tr>
+
+    </table>
+    <script src="https://code.angularjs.org/1.6.0/angular.min.js"></script>
+ </body>
+</html>
