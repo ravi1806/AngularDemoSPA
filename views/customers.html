@@ -7,12 +7,16 @@ Filter: <input type="text" data-ng-model="customFilter.city" />
         <th data-ng-click="CustomCtrl.doSort('city')">City</th>
         <th data-ng-click="CustomCtrl.doSort('orderTotal')">Order</th>
         <th data-ng-click="CustomCtrl.doSort('joined')">Joined</th>
+        <th>&nbsp;</th>
     </tr>
     <tr data-ng-repeat="cust in CustomCtrl.customers | filter: customFilter | orderBy: CustomCtrl.sortMe: CustomCtrl.reverse">
         <td>{{cust.name | uppercase}}</td>
         <td>{{cust.city | lowercase}}</td>
         <td>{{cust.orderTotal | currency: '₹ '}}</td>
         <td>{{cust.joined | date: 'longDate'}}</td>
+        <td><a href="#!/orders/{{cust.orders[0].id}}">View Orders</a></td>
     </tr>
 
 </table>
+
+{{cust.name}}
