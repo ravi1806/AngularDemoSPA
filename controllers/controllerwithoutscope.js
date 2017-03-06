@@ -1,7 +1,19 @@
-var myApp = angular.module('myApp',[]);
+var myApp = angular.module('myApp',['ngRoute']);
+
+myApp.config(['$routeProvider', function ($routeProvider) {
+            $routeProvider
+                .when('/', {
+                    templateUrl: 'views/customers.html',
+                    controller: 'CustomerController',
+                    controllerAs: 'CustomCtrl'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                })
+}]);
 
 myApp.controller('CustomerController',[ function () {
-    var self = this;
+
     this.sortMe = 'name'; //default
     this.reverse = false; //default (ascending)
 
@@ -15,9 +27,9 @@ myApp.controller('CustomerController',[ function () {
     this.doSort = function (propName) {
 
         this.sortMe = propName;
-        console.log(this.sortMe);
+        //console.log(this.sortMe);
         this.reverse = !this.reverse;
-        console.log('inside doSort');
+        //console.log(this.reverse);
     };
 
 

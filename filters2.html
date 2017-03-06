@@ -3,26 +3,12 @@
 <head>
     <title>Filters in Angularjs</title>
 </head>
-<body data-ng-controller="CustomerController as CustomCtrl">
-<h2>Customers</h2>
-Filter: <input type="text" data-ng-model="customFilter.city" />
-<br /><br />
-<table>
-    <tr>
-        <th data-ng-click="CustomCtrl.doSort('name')">Name</th>
-        <th data-ng-click="CustomCtrl.doSort('city')">City</th>
-        <th data-ng-click="CustomCtrl.doSort('orderTotal')">Order</th>
-        <th data-ng-click="CustomCtrl.doSort('joined')">Joined</th>
-    </tr>
-    <tr data-ng-repeat="cust in CustomCtrl.customers | filter: customFilter | orderBy: sortMe: reverse">
-        <td>{{cust.name | uppercase}}</td>
-        <td>{{cust.city | lowercase}}</td>
-        <td>{{cust.orderTotal | currency: '₹ '}}</td>
-        <td>{{cust.joined | date: 'longDate'}}</td>
-    </tr>
+<body>
 
-</table>
+<div ng-view></div>
+
 <script src="https://code.angularjs.org/1.6.0/angular.min.js"></script>
 <script src="controllers/controllerwithoutscope.js"></script>
+<script src="https://code.angularjs.org/1.6.0/angular-route.min.js"></script>
 </body>
 </html>
