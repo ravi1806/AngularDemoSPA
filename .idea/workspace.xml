@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bffbb6a-a0f8-44eb-adda-e1172c55487a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/customersFactory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/OrdersController.js" afterPath="$PROJECT_DIR$/controllers/OrdersController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/controllerwithoutscope.js" afterPath="$PROJECT_DIR$/controllers/controllerwithoutscope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/filters2.html" afterPath="$PROJECT_DIR$/filters2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/orders.html" afterPath="$PROJECT_DIR$/views/orders.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -332,7 +327,7 @@
       <workItem from="1488792975867" duration="1846000" />
       <workItem from="1488796915614" duration="851000" />
       <workItem from="1488812743169" duration="3328000" />
-      <workItem from="1488933554099" duration="3088000" />
+      <workItem from="1488933554099" duration="3107000" />
     </task>
     <task id="LOCAL-00001" summary="directives&#10;">
       <created>1488698630563</created>
@@ -362,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488815829302</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="factories">
+      <created>1488939235327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1488939235327</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41893000" />
+    <option name="totallyTimeSpent" value="41912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-50" y="6" width="1604" height="876" extended-state="0" />
@@ -401,7 +403,8 @@
     <MESSAGE value="directives&#10;" />
     <MESSAGE value="adding controllers w&amp;w/o scope" />
     <MESSAGE value="routingbasics" />
-    <option name="LAST_COMMIT_MESSAGE" value="routingbasics" />
+    <MESSAGE value="factories" />
+    <option name="LAST_COMMIT_MESSAGE" value="factories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
